@@ -38,8 +38,10 @@ public class MainController {
 	@FXML
 	private void handleButtonAction(ActionEvent event) throws IOException {
 		try {
+			float num1 = Float.parseFloat(textfield.getText());
+			float num2 = Float.parseFloat(textfield1.getText());
 
-			System.out.println("hola");
+			resultado1.setText(String.valueOf(sumar(num1, num2)));
 
 		} catch (Exception e) {
 
